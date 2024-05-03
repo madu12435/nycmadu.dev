@@ -1,16 +1,24 @@
 /* Base styles */
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
+    height: auto;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
 video {
     width: 90%; /* Default to 90% of the viewport width */
     max-width: 800px; /* Maximum size of the video */
+    margin-bottom: 20px; /* Space between videos */
 }
 
 /* Media queries for responsiveness */
